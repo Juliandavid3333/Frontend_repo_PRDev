@@ -1,0 +1,6 @@
+<button (click)="refrescargif()">Refrescar</button>
+
+<div *ngIf="resultado">
+  <p><strong>Frase:</strong> {{ resultado.fact }}</p>
+  <img [src]="resultado.gifUrl" alt="GIF" width="300" />
+</div>
